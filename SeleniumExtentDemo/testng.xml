@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Suite" parallel="methods" thread-count="3">
+	<!--<listeners>
+		<listener class-name="listeners.ExtentTestNGListener.class"></listener>
+	</listeners>-->
+	<test name="All Tests">
+
+		<classes>
+			<class name="tests.GoogleTest" />
+			<class name="tests.DataProviderTest" />
+		</classes>
+	</test>
+</suite>
