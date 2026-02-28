@@ -24,5 +24,8 @@ public class GoogleTest extends BaseTest {
     public void openBing() {
         getDriver().get("https://www.bing.com");
         Assert.assertEquals(getDriver().getTitle(), "bing");
+    @Test
+    public void passTest() {
+        Assert.assertTrue(true);
     }
 }
