@@ -7,7 +7,7 @@
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="failTest"/>
+          <include name="successTest"/>
         </methods>
       </class> <!-- tests.GoogleTest -->
     </classes>

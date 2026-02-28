@@ -8,6 +8,9 @@ import utils.RetryAnalyzer;
 
 @Listeners(ExtentTestNGListener.class)
 public class GoogleTest extends BaseTest {
+	
+	// Group Number 10
+	// test 10
 
     @Test(retryAnalyzer = RetryAnalyzer.class)
     public void openGoogle() {
@@ -21,6 +24,13 @@ public class GoogleTest extends BaseTest {
     }
     @Test(retryAnalyzer = RetryAnalyzer.class)
     public void failTest1() {
+    
+    @Test(retryAnalyzer = RetryAnalyzer.class)
+    public void openBing() {
+        getDriver().get("https://www.bing.com");
+        Assert.assertEquals(getDriver().getTitle(), "bing");
+    @Test
+    public void passTest() {
         Assert.assertTrue(true);
     }
 }
