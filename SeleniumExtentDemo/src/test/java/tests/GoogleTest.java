@@ -20,6 +20,10 @@ public class GoogleTest extends BaseTest {
         Assert.assertTrue(false);
     }
     
+    @Test(retryAnalyzer = RetryAnalyzer.class)
+    public void openBing() {
+        getDriver().get("https://www.bing.com");
+        Assert.assertEquals(getDriver().getTitle(), "bing");
     @Test
     public void passTest() {
         Assert.assertTrue(true);
