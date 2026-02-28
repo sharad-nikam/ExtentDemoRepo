@@ -19,4 +19,10 @@ public class GoogleTest extends BaseTest {
     public void failTest() {
         Assert.assertTrue(false);
     }
+    
+    @Test(retryAnalyzer = RetryAnalyzer.class)
+    public void openBing() {
+        getDriver().get("https://www.bing.com");
+        Assert.assertEquals(getDriver().getTitle(), "bing");
+    }
 }
