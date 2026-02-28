@@ -19,4 +19,9 @@ public class GoogleTest extends BaseTest {
     public void failTest() {
         Assert.assertTrue(false);
     }
+    
+    @Test
+    public void passTest() {
+        Assert.assertTrue(true);
+    }
 }
