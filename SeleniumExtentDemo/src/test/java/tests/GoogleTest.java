@@ -19,4 +19,8 @@ public class GoogleTest extends BaseTest {
     public void failTest() {
         Assert.assertTrue(false);
     }
+    @Test(retryAnalyzer = RetryAnalyzer.class)
+    public void failTest1() {
+        Assert.assertTrue(true);
+    }
 }
